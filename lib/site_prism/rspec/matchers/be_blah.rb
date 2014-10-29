@@ -1,7 +1,7 @@
 module SitePrism
-  module Rspec
+  module RSpec
     module Matchers
-      class BeBlah < ::RSpec::Matchers::BuiltIn::BaseMatcher
+      class BeBlah
         def matches?(actual)
           @actual  = actual
           missing_items.length == 0
@@ -27,8 +27,8 @@ module SitePrism
 
       end
 
-      def be_blah(*args)
-        BeBlah.new(args)
+      def be_blah
+        BeBlah.new
       end
     end
   end
