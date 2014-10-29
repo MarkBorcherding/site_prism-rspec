@@ -1,7 +1,5 @@
 require 'rspec/expectations'
 
-require_relative "version"
+require_relative "rspec/version"
+require_relative "rspec/configuration"
 
-module SitePrism
-  # Your code goes here...
-end

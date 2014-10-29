@@ -5,11 +5,11 @@ require 'site_prism/rspec/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "site_prism_rspec_matchers"
-  spec.version       = SitePrism::Rspec::VERSION
+  spec.version       = SitePrism::RSpec::VERSION
   spec.authors       = ["Mark Borcherding"]
   spec.email         = ["markborcherding@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{A set of RSpec matchers for SitePrism with better than default error messages.}
+  spec.description   = %q{A set of RSpec matchers for SitePrism with better than default error messages.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "rspec", "< 3.0"
+  spec.add_dependency "site_prism"
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
