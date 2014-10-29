@@ -1,14 +1,14 @@
 module SitePrism
   module RSpec
     module Matchers
-      class BeBlah
+      class HaveAllTheThings
         def matches?(actual)
           @actual  = actual
           missing_items.length == 0
         end
 
         def failure_message
-          "Expected #{actual} to have #{expected_items}, but didn't find #{missing_items}."
+          "Expected #{actual.class} to have #{expected_items.join ', '}, but didn't find #{missing_items.join ', '}."
         end
 
         protected
@@ -27,8 +27,8 @@ module SitePrism
 
       end
 
-      def be_blah
-        BeBlah.new
+      def have_all_the_things
+        HaveAllTheThings.new
       end
     end
   end

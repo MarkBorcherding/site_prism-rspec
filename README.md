@@ -5,10 +5,11 @@ A set of RSpec matchers that give more verbose error messages.
 ```
 Failures:
 
-  1) foo should find all the things
-     Failure/Error: site.home.ol.should be_blah
-       Expected #<Ol:0x007f85eac6f800> to have ["ol_a", "ol_b", "ol_c"], but didn't find ["ol_c"].
-     # ./spec/blah_blah_spec.rb:9:in `block (2 levels) in <top (required)>'
+  1) foo shouldn't find all the things
+     Failure/Error: site.home.ol.should have_all_the_things
+       Expected Ol to have ol_a, ol_b, ol_c, but didn't find ol_c.
+     # ./spec/have_all_the_things_spec.rb:12:in `block (2 levels) in <top (required)>
+
 ```
 
 
@@ -36,7 +37,7 @@ require 'site_prism/rspec'
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/site_prism_rspec_matchers/fork )
+1. Fork it ( https://github.com/markborcheridng/site_prism_rspec/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
