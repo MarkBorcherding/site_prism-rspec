@@ -1,6 +1,6 @@
 require 'capybara'
 require 'capybara/dsl'
-require 'selenium-webdriver'
+require 'capybara-webkit'
 require 'site_prism'
 
 require_relative '../lib/site_prism/rspec'
@@ -14,8 +14,7 @@ RSpec.configure do |config|
 end
 
 Capybara.configure do |config|
-  config.default_driver = :selenium
-  config.javascript_driver = :selenium
+  config.default_driver = :webkit
   config.run_server = false
   config.default_selector = :css
   config.default_wait_time = 5
