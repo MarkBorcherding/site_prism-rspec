@@ -6,7 +6,7 @@ require 'site_prism'
 
 require_relative '../lib/site_prism/rspec'
 
-require_relative 'test_site/test_site'
+require_relative 'features/test_site/test_site'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |c|
@@ -19,7 +19,7 @@ Capybara.configure do |config|
   config.run_server = false
   config.default_selector = :css
   config.default_wait_time = 5
-  config.app_host = 'file://' + File.dirname(__FILE__) + '/test_site/html'
+  config.app_host = 'file://' + File.dirname(__FILE__) + '/features/test_site/html'
 
   # capybara 2.1 config options
   config.match = :prefer_exact
