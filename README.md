@@ -9,7 +9,6 @@ Failures:
      Failure/Error: site.home.ol.should have_all_the_things
        Expected Ol to have ol_a, ol_b, ol_c, but didn't find ol_c.
      # ./spec/have_all_the_things_spec.rb:12:in `block (2 levels) in <top (required)>
-
 ```
 
 

@@ -8,7 +8,7 @@ module SitePrism
         end
 
         def failure_message
-          "Expected #{actual.class} to have #{expected_items.join ', '}, but didn't find #{missing_items.join ', '}."
+          "Unable to find all the things for #{actual.class}.\n  Could not find: #{missing_items.join ', '}"
         end
 
         protected
