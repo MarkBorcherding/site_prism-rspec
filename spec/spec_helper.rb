@@ -1,6 +1,7 @@
 require 'capybara'
-require 'capybara/dsl'
 require 'capybara-webkit'
+require 'capybara/dsl'
+require 'capybara/rspec'
 require 'site_prism'
 
 require_relative '../lib/site_prism/rspec'
