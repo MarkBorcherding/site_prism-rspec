@@ -6,4 +6,5 @@ class TestPage < SitePrism::Page
 
   section :section_with_missing_things, SectionWithThings, '.missing-things'
   section :section_with_all_the_things, SectionWithThings, '.with-all-the-things'
+  section :section_with_none_of_the_things, SectionWithThings, '.with-none-of-the-things'
 end

@@ -19,7 +19,7 @@ feature "Having all the things" do
     }.to raise_exception(RSpec::Expectations::ExpectationNotMetError, /Could not find: thing_c/)
   end
 
-  scenario "when we expect to not find al the things" do
+  scenario "when we expect to not find all the things" do
     expect {
       expect(site.home.section_with_all_the_things).to_not have_all_the_things
     }.to raise_exception(RSpec::Expectations::ExpectationNotMetError, /Didn't expected to find all the things for SectionWithThings/)
