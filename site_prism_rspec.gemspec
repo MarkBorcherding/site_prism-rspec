@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'site_prism/rspec/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "site_prism_rspec_matchers"
+  spec.name          = "site_prism-rspec"
   spec.version       = SitePrism::RSpec::VERSION
   spec.authors       = ["Mark Borcherding"]
   spec.email         = ["markborcherding@gmail.com"]
