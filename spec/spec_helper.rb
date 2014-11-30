@@ -5,8 +5,10 @@ require 'capybara/rspec'
 require 'site_prism'
 
 require_relative '../lib/site_prism/rspec'
-
 require_relative 'features/test_site/test_site'
+
+require 'coveralls'
+Coveralls.wear!
 
 RSpec.configure do |config|
   config.expect_with :rspec do |c|
