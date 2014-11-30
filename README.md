@@ -11,6 +11,8 @@ Failures:
      # ./spec/have_all_the_things_spec.rb:12:in `block (2 levels) in <top (required)>
 ```
 
+[![Build Status](https://travis-ci.org/MarkBorcherding/site_prism-rspec.svg?branch=master)](https://travis-ci.org/MarkBorcherding/site_prism-rspec)
+[![Dependency Status](https://gemnasium.com/MarkBorcherding/site_prism-rspec.svg)](https://gemnasium.com/MarkBorcherding/site_prism-rspec)
 
 ## Installation
 
