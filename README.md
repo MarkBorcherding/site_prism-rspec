@@ -17,7 +17,7 @@ Failures:
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'site_prism_rspec'
+gem 'site_prism-rspec'
 ```
 
 And then execute:
@@ -26,7 +26,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install site_prism_rspec
+    $ gem install site_prism-rspec
 
 ## Usage
 
@@ -36,7 +36,7 @@ require 'site_prism/rspec'
 
 ## Contributing
 
-1. Fork it ( https://github.com/markborcheridng/site_prism_rspec/fork )
+1. Fork it ( https://github.com/markborcheridng/site_prism-rspec/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
