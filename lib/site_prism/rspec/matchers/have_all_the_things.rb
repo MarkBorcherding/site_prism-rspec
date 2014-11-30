@@ -28,7 +28,6 @@ module SitePrism
         def actual
           @actual
         end
-
       end
 
       def have_all_the_things

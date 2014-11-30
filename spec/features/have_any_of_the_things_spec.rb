@@ -14,14 +14,14 @@ feature "Having any of the things" do
   end
 
   scenario "when we do not have any of the things" do
-    expect {
+    expect do
       expect(site.home.section_with_none_of_the_things).to have_any_of_the_things
-    }.to raise_exception(RSpec::Expectations::ExpectationNotMetError, /Expected to find at least part of SectionWithThings/)
+    end.to raise_exception(RSpec::Expectations::ExpectationNotMetError, /Expected to find at least part of SectionWithThings/)
   end
 
   scenario "when we expect to not find any of the things" do
-    expect {
+    expect do
       expect(site.home.section_with_missing_things).to_not have_any_of_the_things
-    }.to raise_exception(RSpec::Expectations::ExpectationNotMetError, /Found: thing_a, thing_b/)
+    end.to raise_exception(RSpec::Expectations::ExpectationNotMetError, /Found: thing_a, thing_b/)
   end
 end
