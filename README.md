@@ -14,6 +14,7 @@ Failures:
 [![Build Status](https://travis-ci.org/MarkBorcherding/site_prism-rspec.svg?branch=master)](https://travis-ci.org/MarkBorcherding/site_prism-rspec)
 [![Dependency Status](https://gemnasium.com/MarkBorcherding/site_prism-rspec.svg)](https://gemnasium.com/MarkBorcherding/site_prism-rspec)
 [![Coverage Status](https://coveralls.io/repos/MarkBorcherding/site_prism-rspec/badge.png)](https://coveralls.io/r/MarkBorcherding/site_prism-rspec)
+[![Inline docs](http://inch-ci.org/github/MarkBorcherding/site_prism-rspec.svg?branch=master)](http://inch-ci.org/github/MarkBorcherding/site_prism-rspec)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://badges.mit-license.org)
 
 ## Installation
