@@ -8,9 +8,3 @@
 # Offense count: 9
 Style/Documentation:
   Enabled: false
-
-# Offense count: 14
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, SupportedStyles.
-Style/StringLiterals:
-  Enabled: false

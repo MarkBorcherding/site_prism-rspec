@@ -1,4 +1,4 @@
-require_relative "matchers"
+require_relative 'matchers'
 
 module SitePrism
   module RSpec
