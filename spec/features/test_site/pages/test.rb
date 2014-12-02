@@ -1,5 +1,6 @@
 require_relative '../sections/section_with_things'
 
+# An example page to exercise our tests
 class TestPage < SitePrism::Page
   set_url '/test.html'
   set_url_matcher(/test\.html$/)

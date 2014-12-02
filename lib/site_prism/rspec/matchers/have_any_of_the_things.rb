@@ -1,6 +1,10 @@
+# The SitePrism namespace
 module SitePrism
+  # Our RSpec extension
   module RSpec
+    # Our matchers
     module Matchers
+      # See if a page has any of the listed elements
       class HaveAnyOfTheThings
         attr_reader :actual
 

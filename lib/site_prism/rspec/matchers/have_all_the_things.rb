@@ -1,6 +1,10 @@
+# The SitePrism namespace
 module SitePrism
+  # Our RSpec extension
   module RSpec
+    # Our Matchers
     module Matchers
+      # Match all the things
       class HaveAllTheThings
         attr_reader :actual
 
