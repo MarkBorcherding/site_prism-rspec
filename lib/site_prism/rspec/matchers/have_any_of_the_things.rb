@@ -2,6 +2,8 @@ module SitePrism
   module RSpec
     module Matchers
       class HaveAnyOfTheThings
+        attr_reader :actual
+
         def matches?(actual)
           @actual  = actual
           found_items.any?
@@ -23,10 +25,6 @@ module SitePrism
 
         def found_items
           expected_items.select { |element| actual.send "has_#{element}?" }
-        end
-
-        def actual
-          @actual
         end
       end
 

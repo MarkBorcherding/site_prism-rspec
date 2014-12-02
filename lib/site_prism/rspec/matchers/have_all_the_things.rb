@@ -2,6 +2,8 @@ module SitePrism
   module RSpec
     module Matchers
       class HaveAllTheThings
+        attr_reader :actual
+
         def matches?(actual)
           @actual  = actual
           missing_items.length == 0
@@ -23,10 +25,6 @@ module SitePrism
 
         def missing_items
           expected_items.reject { |element| actual.send "has_#{element}?" }
-        end
-
-        def actual
-          @actual
         end
       end
 
